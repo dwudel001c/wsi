@@ -9,6 +9,7 @@ body {
 #product-region {
     display: flex;
   }
+
   #product-images {
     flex: 0 0  58%;
   }
@@ -32,7 +33,14 @@ body {
     font-size: 15px;
     font-family: Verdana, Arial, Helvetica, sans-serif;   
   }
-
+  #product-quantity {
+    font-weight: bold;
+    padding:6px;
+    font-size: 15px;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    width: 5px;  
+    size: 4;  
+  }
 
 .apron-thumbnail {
     display: flex;

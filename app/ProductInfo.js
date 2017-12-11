@@ -2,6 +2,7 @@ var React = require('react');
 var ButtonAddToCart = require('./ButtonAddToCart');
 var Expandor = require('./Expandor');
 var productData = require('./productData');
+var QuantityWidget = require('./QuantityWidget');
 
 class ProductInfo extends React.Component {
     constructor(props) {
@@ -39,8 +40,10 @@ class ProductInfo extends React.Component {
                         <li>{productData[this.state.index].bullet4}</li>
                     </ul>
                 </div>
+                <div id="product-quantity"><QuantityWidget></QuantityWidget></div>
                 <div id="product-price">${productData[this.state.index].price}</div>
                 <div>
+                
                     <ButtonAddToCart index={this.state.index}></ButtonAddToCart>
                 </div>
                 <div className="expanded-info">
